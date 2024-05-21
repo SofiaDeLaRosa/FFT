@@ -1,2 +1,1 @@
-# nbody2023
-nbody model using C
+# Fast Fourier Transform (FFT)
