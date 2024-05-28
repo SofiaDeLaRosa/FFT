@@ -23,8 +23,9 @@ We calculate FFT of the Nirvana's unplugged concert in New York in 1994 and gene
   
 We use:
 
-* Open MPI version 4.1.2
-* Python 3.10.12
+* [Open MPI versión 4.1.2](https://www.open-mpi.org/)
+* [Python3](https://www.python.org/downloads/)
+* [Matplotlib](https://matplotlib.org/)
 
 ##  Running
 
