@@ -46,3 +46,8 @@ We decide the size of window and it must be a power of 2, so that the fast Fouri
 * mpiexec -n 2 ./fft -file nirvana.dat -window 1024 -spectrum
 
 where n is the number of nodes, nirvana.dat is the file and 1024 is the size of the window 
+
+## References 
+ 
+https://docs.python.org/3/library/subprocess.html
+https://www.open-mpi.org/
