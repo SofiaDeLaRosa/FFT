@@ -29,8 +29,7 @@ Then, we ran the following command to convert our file from stereo to mono:
 
 We ran plot-wav.py. If you want to try with your file, make sure to change to your mono filename in plot-wav.py.
 
-Then, we ran the following command to execute fft.c to read the data or generate 
-synthetic data, counts the number of samples when reading data N, the master node divides the samples by the window size and distribute samples to slave nodes, each slave node calculates the FFT for each sample using MPI and the spectra are saved in files 'output/spectrum-mpi-<index>.dat'. 
+Then, we ran the following command to execute fft.c to read the data or generate synthetic data, counts the number of samples when reading data N, the master node divides the samples by the window size and distribute samples to slave nodes, each slave node calculates the FFT for each sample using MPI and the spectra are saved in files 'output/spectrum-mpi-<index>.dat'. 
 
 We decide the size of window and it must be a power of 2, so that the fast Fourier transform is calculated. The number of spectra is the number of samples N divided by the window size.
 
