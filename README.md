@@ -19,6 +19,15 @@ The Barber Method is a classic synchronization problem in computer science used 
 
 ##  Metodology
 
+We calculate FFT of the Nirvana's unplugged concert in New York in 1994 and generate the spectra of the frequencies.
+  
+We use:
+
+* Open MPI version 4.1.2
+* Python 3.10.12
+
+##  Running
+
 We chose an audio wave that we wanted to analyze, in this case, it was Nirvana's unplugged concert in New York in 1994.
 
 Firstly, we transform the mp3 into wav format.
@@ -36,10 +45,3 @@ We decide the size of window and it must be a power of 2, so that the fast Fouri
 * mpiexec -n 2 ./fft -file nirvana.dat -window 1024 -spectrum
 
 where n is the number of nodes, nirvana.dat is the file and 1024 is the size of the window 
-  
-We use:
-
-* Open MPI version 4.1.2
-* Python 3.10.12
-
- 
