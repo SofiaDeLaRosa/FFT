@@ -37,12 +37,12 @@ Then, we ran the following command to convert our file from stereo to mono:
 
 * ffmpeg -i nirvana-unplugged-in-new-york-1994.wav -ac 1 nirvana.wav
 
+Then, we ran the following command to execute fft.c to read the data or generate synthetic data, counts the number of samples when reading data N, the master node divides the samples by the window size and distribute samples to slave nodes, each slave node calculates the FFT for each sample using MPI and the spectra are saved in files 'output/spectrum-mpi-<index>.dat'. 
 We ran plot-wav.py. If you want to try with your file, make sure to change to your mono filename in plot-wav.py.
 
-Then, we ran the following command to execute fft.c to read the data or generate synthetic data, counts the number of samples when reading data N, the master node divides the samples by the window size and distribute samples to slave nodes, each slave node calculates the FFT for each sample using MPI and the spectra are saved in files 'output/spectrum-mpi-<index>.dat'. 
 Also, we calculate the memory allocation in MB and the benchmarks of the system, the user and the real (sum of the system and the user) in sec to measure code and parallel processing performance.
 
-We decide the size of window and it must be a power of 2, so that the fast Fourier transform is calculated. The number of spectra is the number of samples N divided by the window size.
+We decide the size of window and **it must be a power of 2**, so that the fast Fourier transform is calculated. The number of spectra is the number of samples N divided by the window size.
 
 * mpiexec -n 2 ./fft -file nirvana.dat -window 1024 -spectrum
 
