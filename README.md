@@ -49,5 +49,5 @@ where n is the number of nodes, nirvana.dat is the file and 1024 is the size of 
 
 ## References 
  
-https://docs.python.org/3/library/subprocess.html
-https://www.open-mpi.org/
+[https://docs.python.org/3/library/subprocess.html](https://docs.python.org/3/library/subprocess.html)
+[https://www.open-mpi.org/](https://www.open-mpi.org/)
