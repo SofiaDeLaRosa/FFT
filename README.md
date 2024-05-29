@@ -39,7 +39,7 @@ Run the following command to convert your file from stereo to mono, make sure to
 
 Run plot-wav.py file, make sure to change the wav file to yours.
 
-**Create a folder called ouput**. This is where the output data of fft.c will be saved.
+Create a **folder called ouput**. This is where the output data of fft.c will be saved.
 
 Compile the program with the command **make**. 
 
