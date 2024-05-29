@@ -19,7 +19,7 @@ The Barber Method is a classic synchronization problem in computer science used 
 
 ##  Metodology
 
-We record an audio of birds singing and generate the spectra of the frequencies.
+We record an audio of birds singing and generate the spectra of the frequencies by calculating FFT in parallel using OpenMPI and the Barber Method.
   
 We use:
 
