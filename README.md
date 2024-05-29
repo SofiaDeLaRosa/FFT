@@ -41,7 +41,9 @@ Run plot-wav.py file, make sure to change the wav file to our.
 
 Create a **folder called ouput**. This is where the output data of fft.c will be saved.
 
-GNUmakefile compiles and links a C program using gcc and mpicc. In PROGRAM, we need to specify our C filename. In '$(OBJS)' and '$(PROGRAM)' section, we need to we need to **specify the path to openmpi** starting with -I/. For example:
+GNUmakefile compiles and links a C program using gcc and mpicc. In PROGRAM, we need to specify our C filename. In '$(OBJS)' and '$(PROGRAM)' section, we need to we need to **specify the path to openmpi** starting with -I/. 
+
+For example:
 **-I/usr/lib/x86_64-linux-gnu/openmpi/include/**
 
 Compile the program with the command **make**.  
