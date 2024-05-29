@@ -19,7 +19,7 @@ The Barber Method is a classic synchronization problem in computer science used 
 
 ##  Metodology
 
-We calculate FFT of the Nirvana's unplugged concert in New York in 1994 and generate the spectra of the frequencies.
+We record an audio of birds singing and generate the spectra of the frequencies.
   
 We use:
 
@@ -29,24 +29,36 @@ We use:
 
 ##  Running
 
-We chose an audio wave that we wanted to analyze, in this case, it was Nirvana's unplugged concert in New York in 1994.
+You need to have your wav, fft.c, plot-wav.py, plot-spectrum.py, GNUmakefile, Timming, myvar.h files in the **same folder**.
 
-Firstly, we transform the mp3 into wav format.
+Firstly, convert the mp3 into wav format.
 
-Then, we ran the following command to convert our file from stereo to mono:
+Run the following command to convert your file from stereo to mono, make sure to rename the files to yours:
 
-* ffmpeg -i nirvana-unplugged-in-new-york-1994.wav -ac 1 nirvana.wav
+* ffmpeg -i birdsong.wav -ac 1 data-bird.wav
 
-Then, we ran the following command to execute fft.c to read the data or generate synthetic data, counts the number of samples when reading data N, the master node divides the samples by the window size and distribute samples to slave nodes, each slave node calculates the FFT for each sample using MPI and the spectra are saved in files 'output/spectrum-mpi-<index>.dat'. 
+Run plot-wav.py file, make sure to change the wav file to yours.
+
+**Create a folder called ouput**. This is where the output data of fft.c will be saved.
+
+Compile the program with the command **make**. 
+
+Run this command every time you want to get rid of your object and executable files: **make clean**.
+
+Then, run the following command to execute fft.c that read the data or generate synthetic data, counts the number of samples when reading data N, the master node divides the samples by the window size and distribute samples to slave nodes, each slave node calculates the FFT for each sample using MPI and the spectra are saved in files 'output/spectrum-mpi-<index>.dat'. 
 We ran plot-wav.py. If you want to try with your file, make sure to change to your mono filename in plot-wav.py.
 
-Also, we calculate the memory allocation in MB and the benchmarks of the system, the user and the real (sum of the system and the user) in sec to measure code and parallel processing performance.
+Also, it calculates the memory allocation in MB and the benchmarks of the system, the user and the real (sum of the system and the user) in sec to measure code and parallel processing performance.
 
-We decide the size of window and **it must be a power of 2**, so that the fast Fourier transform is calculated. The number of spectra is the number of samples N divided by the window size.
+Choose the size of window and **it must be a power of 2**, so that the fast Fourier transform is calculated. The number of spectra is the number of samples N divided by the window size.
 
 * mpiexec -n 2 ./fft -file nirvana.dat -window 1024 -spectrum
 
 where n is the number of nodes, nirvana.dat is the file and 1024 is the size of the window 
+
+Run plot-spectrum.py to graph the frecuencies in Hz, the times in sec. and the amplitudes (in x, y, z axis respectively.)
+
+## Results
 
 ## References 
  
