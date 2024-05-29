@@ -13,9 +13,12 @@ The Fast Fourier Transform (FFT) is an efficient algorithm for computing the Dis
 
 FFT allows us to distinguish patterns within the signal, this capability is crucial for identifying the predominant frequencies present in the signal. The FFT's efficiency and speed make it ideal for applications that require real-time signal processing, such as audio signal processing, telecommunications, and vibration analysis.
 
-In other hand, OpenMPI; or Open Message Passing Interface, is an open-source implementation of the MPI standard, designed for high-performance computing (HPC). MPI is a communication protocol used to program parallel computers, allowing processes to communicate with each other by sending and receiving messages.
+In other hand, Open Message Passing Interface (OpenMPI) is an open-source implementation of the MPI standard, designed for high-performance computing (HPC). MPI is a communication protocol used to program parallel computers, allowing processes to communicate with each other by sending and receiving messages.
 
-The Barber Method is a classic synchronization problem in computer science used to illustrate and solve issues related to process synchronization and resource allocation. In this problem, a barber shop with a single barber has a waiting room with a limited number of chairs for customers. If the barber is busy and all chairs are occupied, arriving customers leave. Otherwise, customers wait in an available chair or get their haircut if the barber is free. The challenge is to manage the coordination between the barber and the customers efficiently, ensuring that the barber works when there are customers and sleeps when there are none, and that customers do not wait indefinitely or leave unnecessarily.
+The Barber Method is a classic synchronization problem in computer science used to illustrate and solve issues related to process synchronization and resource allocation. Basically what it does is:
+
+1. Ask if there is a free process to assign a task.
+2. Ask if the process is over to receive results.
 
 ##  Metodology
 
