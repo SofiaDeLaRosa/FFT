@@ -66,7 +66,7 @@ Here are the graphs of the amplitudes and frequencies with and without graphing 
 
 ![alt text](https://github.com/SofiaDeLaRosa/FFT/blob/main/3Dspectrum.png) 
 
-![alt text](https://github.com/SofiaDeLaRosa/FFT/blob/main/2Dspectrum.png) 
+![alt text](https://github.com/SofiaDeLaRosa/FFT/blob/main/spectrum_6.png) 
 
 
 ## References 
