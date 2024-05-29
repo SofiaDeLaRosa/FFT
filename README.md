@@ -29,21 +29,24 @@ We use:
 
 ##  Running
 
-You need to have your wav, fft.c, plot-wav.py, plot-spectrum.py, GNUmakefile, Timming, myvar.h files in the **same folder**.
+We need to have your wav, fft.c, plot-wav.py, plot-spectrum.py, GNUmakefile, Timming, myvar.h files in the **same folder**.
 
 Firstly, convert the mp3 into wav format.
 
-Run the following command to convert your file from stereo to mono, make sure to rename the files to yours:
+Run the following command to convert your file from stereo to mono, make sure to rename the files to our:
 
 * ffmpeg -i birdsong.wav -ac 1 data-bird.wav
 
-Run plot-wav.py file, make sure to change the wav file to yours.
+Run plot-wav.py file, make sure to change the wav file to our.
 
 Create a **folder called ouput**. This is where the output data of fft.c will be saved.
 
-Compile the program with the command **make**. 
+GNUmakefile compiles and links a C program using gcc and mpicc. In PROGRAM, we need to specify our C filename. In $(OBJS) and $(PROGRAM) section, we need to we need to **specify the path to openmpi** starting with -I/. For example:
+**-I/usr/lib/x86_64-linux-gnu/openmpi/include/**
 
-Run this command every time you want to get rid of your object and executable files: **make clean**.
+Compile the program with the command **make**.  
+
+Run this command every time we want to remove temporary and object files: **make clean**.
 
 Then, run the following command to execute fft.c that read the data or generate synthetic data, counts the number of samples when reading data N, the master node divides the samples by the window size and distribute samples to slave nodes, each slave node calculates the FFT for each sample using MPI and the spectra are saved in files 'output/spectrum-mpi-<index>.dat'. 
 We ran plot-wav.py. If you want to try with your file, make sure to change to your mono filename in plot-wav.py.
