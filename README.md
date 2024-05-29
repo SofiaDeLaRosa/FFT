@@ -57,7 +57,7 @@ Also, with the Timming files, it calculates the memory allocation in MB and the 
 
 Choose the size of window and **it must be a power of 2**, so that the fast Fourier transform is calculated. The number of spectra is the number of samples N divided by the window size.
 
-* mpiexec -n 2 ./fft -file nirvana.dat -window 1024 -spectrum
+* mpiexec -n 2 ./fft -file data-bird.dat -window 128 -spectrum
 
 where n is the number of nodes, nirvana.dat is the file and 1024 is the size of the window 
 
