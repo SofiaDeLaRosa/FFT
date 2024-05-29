@@ -48,7 +48,7 @@ Run this command every time you want to get rid of your object and executable fi
 Then, run the following command to execute fft.c that read the data or generate synthetic data, counts the number of samples when reading data N, the master node divides the samples by the window size and distribute samples to slave nodes, each slave node calculates the FFT for each sample using MPI and the spectra are saved in files 'output/spectrum-mpi-<index>.dat'. 
 We ran plot-wav.py. If you want to try with your file, make sure to change to your mono filename in plot-wav.py.
 
-Also, it calculates the memory allocation in MB and the benchmarks of the system, the user and the real (sum of the system and the user) in sec to measure code and parallel processing performance.
+Also, with the Timming files, itcalculates the memory allocation in MB and the benchmarks of the system, the user and the real (sum of the system and the user) in sec to measure code and parallel processing performance.
 
 Choose the size of window and **it must be a power of 2**, so that the fast Fourier transform is calculated. The number of spectra is the number of samples N divided by the window size.
 
