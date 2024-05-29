@@ -56,9 +56,16 @@ Choose the size of window and **it must be a power of 2**, so that the fast Four
 
 where n is the number of nodes, nirvana.dat is the file and 1024 is the size of the window 
 
-Run plot-spectrum.py to graph the frecuencies in Hz, the times in sec. and the amplitudes (in x, y, z axis respectively.)
+Run spectrum.py to graph the frecuencies of every 10 (step) windows in Hz, the times in sec. and the amplitudes (in x, y, z axis respectively).
+
+In other hand, Run spectrum2.py to graph the frecuencies of every 10 (step) windows in Hz and the amplitudes (in x, y axis respectively).
 
 ## Results
+
+Here are the graphs of the amplitudes and frequencies with and without graphing the times.
+
+ ![alt text](https://github.com/SofiaDeLaRosa/FFT/blob/main/3Dspectrum.png) 
+
 
 ## References 
  
