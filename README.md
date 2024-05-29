@@ -29,11 +29,11 @@ We use:
 
 ##  Running
 
-We need to have your wav, fft.c, plot-wav.py, plot-spectrum.py, GNUmakefile, Timming, myvar.h files in the **same folder**.
+We need to have our wav, fft.c, plot-wav.py, plot-spectrum.py, GNUmakefile, Timming, myvar.h files in the **same folder**.
 
 Firstly, convert the mp3 into wav format.
 
-Run the following command to convert your file from stereo to mono, make sure to rename the files to our:
+Run the following command to convert our file from stereo to mono, make sure to rename the files to our:
 
 * ffmpeg -i birdsong.wav -ac 1 data-bird.wav
 
