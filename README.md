@@ -62,9 +62,11 @@ In other hand, Run spectrum2.py to graph the frecuencies of every 10 (step) wind
 
 ## Results
 
-Here are the graphs of the amplitudes and frequencies with and without graphing the times.
+Here are the graphs of the amplitudes and frequencies with and without graphing the times respectively.
 
- ![alt text](https://github.com/SofiaDeLaRosa/FFT/blob/main/3Dspectrum.png) 
+![alt text](https://github.com/SofiaDeLaRosa/FFT/blob/main/3Dspectrum.png) 
+
+![alt text](https://github.com/SofiaDeLaRosa/FFT/blob/main/2Dspectrum.png) 
 
 
 ## References 
