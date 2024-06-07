@@ -26,7 +26,7 @@ We record an audio of birds singing and generate the spectra of the frequencies 
   
 We use:
 
-* [Open MPI](https://www.open-mpi.org/) versión 4.1.2
+* [Open MPI](https://www.open-mpi.org/) 4.1.2 version
 * [Python3](https://www.python.org/downloads/)
 * [Matplotlib](https://matplotlib.org/)
 
